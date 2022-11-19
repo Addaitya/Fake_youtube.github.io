@@ -1,0 +1,149 @@
+.vedio-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   column-gap: 16px;
+   row-gap: 30px;
+}
+
+@media (max-width: 914px) {
+
+    .vedio-grid
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 915px) and (max-width: 1179px){
+    .vedio-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1180px){
+    .vedio-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* 
+.vedio-preview
+{}  */
+
+.big-photo
+{
+    margin-bottom: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-preview
+{
+    width: 100%;
+    border-radius: 18px;
+}
+
+.vedio-time
+{
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 5px;
+}
+.vedio-discription
+{
+    width:  100%;
+}
+
+.profile
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-img
+{
+    width: 36px;
+    border-radius: 20px;
+    
+}
+
+.channel-information
+{
+    display: flex;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.9);
+    border-radius: 8px;
+    position: absolute;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.channel-information img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.channel-information div
+{
+    margin-left: 15px;
+}
+
+.channel-heading
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.channel-stats
+{
+    white-space: nowrap;
+}
+
+.profile:hover .channel-information
+{
+    opacity: 1;
+}
+
+
+.vedio-text
+{
+    display: inline-block;
+    width: 80%;
+    cursor: pointer;
+}
+
+.vedio-title
+{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    line-height: 21px;
+}
+
+.vedio-author, .vedio-stats
+{
+    font-size: 12px;
+    color: rgb(96,96,96);
+    margin-bottom: 2px;
+}
+
+
+
+
